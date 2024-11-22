@@ -1139,7 +1139,7 @@ void UI_DisplayMenu(void)
                 #else
                     UI_PrintStringSmallNormal("Broadcast", 54, 127, 6);
                 #endif
-
+                    UI_PrintStringSmallNormal("FM & Spectrum", 54, 127, 6);
                 y = 2;
             }
 
