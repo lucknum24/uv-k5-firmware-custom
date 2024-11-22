@@ -1,6 +1,3 @@
-# Stats
-
-![Alt](https://repobeats.axiom.co/api/embed/947813147857755cef60a960d13734044b3b2c22.svg "Repobeats analytics image")
 
 # Open re-implementation of the Quansheng UV-K5/K6/5R v2.1.27 firmware
 
