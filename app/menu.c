@@ -309,7 +309,7 @@ int MENU_GetLimits(uint8_t menu_id, int32_t *pMin, int32_t *pMax)
 
         case MENU_SAVE:
             //*pMin = 0;
-            *pMax = 5;
+            *pMax = 15;
             break;
 
         case MENU_MIC:
