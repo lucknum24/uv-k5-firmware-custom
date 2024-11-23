@@ -1129,7 +1129,7 @@ void APP_Update(void)
 #ifdef ENABLE_FEAT_F4HWN_SLEEP
             if(gWakeUp)
             {
-                gPowerSave_10ms = gEeprom.BATTERY_SAVE * 200; // deep sleep now indexed on BatSav
+                gPowerSave_10ms = gEeprom.BATTERY_SAVE * 100; // deep sleep now indexed on BatSav
             }
             else
             {
@@ -1638,7 +1638,7 @@ void APP_TimeSlice500ms(void)
     if (gWakeUp) {
         static uint8_t counter = 0;
         counter = (counter + 1) % 4;
-        BK4819_ToggleGpioOut(BK4819_GPIO5_PIN1_RED, (counter == 0));
+        BK4819_ToggleGpioOut(BK4819_GPIO6_PIN2_GREEN, (counter == 0));
     }
 #endif
 
