@@ -1132,14 +1132,15 @@ void UI_DisplayMenu(void)
 
                 UI_PrintStringSmallNormal(edit, 54, 127, 1);
 
-                #ifdef ENABLE_SPECTRUM
-                    #ifndef ENABLE_FMRADIO
-                        UI_PrintStringSmallNormal("Bandscope", 54, 127, 6);
-                    #endif
-                #else
-                    UI_PrintStringSmallNormal("Broadcast", 54, 127, 6);
-                #endif
-                    UI_PrintStringSmallNormal("FM & Spectrum", 54, 127, 6);
+                // #ifdef ENABLE_SPECTRUM
+                //     #ifndef ENABLE_FMRADIO
+                //         UI_PrintStringSmallNormal("Bandscope", 54, 127, 6);
+                //     #endif
+                // #else
+                //     UI_PrintStringSmallNormal("Broadcast", 54, 127, 6);
+                // #endif
+                UI_PrintStringSmallNormal(EDITION_STRING, 54, 127, 6);
+                
                 y = 2;
             }
 
