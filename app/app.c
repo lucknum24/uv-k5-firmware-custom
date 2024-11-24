@@ -1618,7 +1618,7 @@ void APP_TimeSlice500ms(void)
             PWM_PLUS0_CH0_COMP = 0;
             ST7565_ShutDown();
         }
-        else if(gSleepModeCountdown_500ms != 0 && gSleepModeCountdown_500ms < 61 && gSetting_set_off != 0)
+        else if(gSleepModeCountdown_500ms != 0 && gSleepModeCountdown_500ms < 21 && gSetting_set_off != 0)
         {
             if(gSleepModeCountdown_500ms % 4 == 0)
             {
