@@ -59,7 +59,6 @@ const uint16_t Voltage2PercentageTable[][7][3] = {
         {0,   0  },
         {0,   0  },
         {0,   0  },
-        {0,   0  },
     },
 
     [BATTERY_TYPE_2200_MAH] = {
