@@ -1637,7 +1637,7 @@ void APP_TimeSlice500ms(void)
 
     if (gWakeUp) {
         static uint8_t counter = 0;
-        counter = (counter + 1) % 8;
+        counter = (counter + 1) % gEeprom.BATTERY_SAVE;
         BK4819_ToggleGpioOut(BK4819_GPIO5_PIN1_RED, (counter == 0));
     }
 #endif
