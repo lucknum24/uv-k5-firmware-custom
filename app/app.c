@@ -1637,8 +1637,8 @@ void APP_TimeSlice500ms(void)
 
     if (gWakeUp) {
         static uint8_t counter = 0;
-        counter = (counter + 1) % 4;
-        BK4819_ToggleGpioOut(BK4819_GPIO6_PIN2_GREEN, (counter == 0));
+        counter = (counter + 1) % 8;
+        BK4819_ToggleGpioOut(BK4819_GPIO5_PIN1_RED, (counter == 0));
     }
 #endif
 
