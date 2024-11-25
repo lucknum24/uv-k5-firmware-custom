@@ -53,10 +53,10 @@ volatile uint16_t gPowerSave_10ms;
 const uint16_t Voltage2PercentageTable[][7][3] = {
     [BATTERY_TYPE_1600_MAH] = {
         {828, 100},
+        {814, 97 },
+        {760, 25 },
+        {729, 6  },
         {630, 0  },
-        {0,   0  },
-        {0,   0  },
-        {0,   0  },
         {0,   0  },
         {0,   0  },
     },
