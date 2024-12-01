@@ -86,7 +86,7 @@ const uint16_t    NOAA_countdown_3_10ms            =   200 / 10;   // 200ms
 
 const uint32_t    gDefaultAesKey[4]                = {0x4AA5CC60, 0x0312CC5F, 0xFFD2DABB, 0x6BBA7F92};
 
-const uint8_t     gMicGain_dB2[5]                  = {3, 8, 16, 24, 31};
+const uint8_t     gMicGain_dB2[5]                  = {3, 14, 24, 27, 31};
 
 #ifndef ENABLE_FEAT_F4HWN
     bool              gSetting_350TX;
