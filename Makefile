@@ -225,12 +225,14 @@ ifeq ($(ENABLE_FEAT_F4HWN),1)
 	VERSION_STRING_1 ?= v0.22
 
 	AUTHOR_STRING_2 ?= BI3AYT
-	VERSION_STRING_2 ?= v3.8.1
+	VERSION_STRING_2 ?= v3.9.1
 
 	EDITION_STRING ?= Custom
 
 	AUTHOR_STRING ?= $(AUTHOR_STRING_1)+$(AUTHOR_STRING_2)
 	VERSION_STRING ?= $(VERSION_STRING_2)
+
+	SQL_TONE ?= 550 # For SA818, use 600 and python3 sa818.py --port /dev/ttyS2 radio --frequency 434.975 --ctcss 71.9 --tail Open
 else
 	AUTHOR_STRING ?= EGZUMER
 	# the user might not have/want git installed
@@ -413,7 +415,7 @@ endif
 ifeq ($(ENABLE_FEAT_F4HWN),1)
 	CFLAGS  += -DENABLE_FEAT_F4HWN
 	CFLAGS  += -DALERT_TOT=10
-	CFLAGS  += -DSQL_TONE=550 # For SA818, use 600 and python3 sa818.py --port /dev/ttyS2 radio --frequency 434.975 --ctcss 71.9 --tail Open
+	CFLAGS  += -DSQL_TONE=$(SQL_TONE)
 	CFLAGS  += -DAUTHOR_STRING_1=\"$(AUTHOR_STRING_1)\" -DVERSION_STRING_1=\"$(VERSION_STRING_1)\"
 	CFLAGS  += -DAUTHOR_STRING_2=\"$(AUTHOR_STRING_2)\" -DVERSION_STRING_2=\"$(VERSION_STRING_2)\"
 	CFLAGS  += -DEDITION_STRING=\"$(EDITION_STRING)\"
